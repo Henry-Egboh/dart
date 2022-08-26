@@ -1,0 +1,165 @@
+/* general declarations  */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 100%;
+    /* background-color: hsla(25, 9.2%, 62%, 0.2);  */
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+/* icons and images */
+
+.img_as_logo_icon{
+    width: 100px;
+    height: 100px;
+}
+
+/* first nav with header  */
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(121, 106, 92, 0.8);
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.logo_text{
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* background-color: orange; */
+    flex: 1;
+}
+
+#art{
+    color: #30616b;
+}
+
+/* search field  */
+.search{
+    /* background-color: blue; */
+    flex: 1;
+}
+.search input[type=text]{
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-image: url(./img/icons8-search-50.png);
+    background-repeat: no-repeat;
+}
+
+ /* search plaxeholder text  */
+input[type=text]::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    color: wheat;
+    padding-left: 40px;
+}
+
+    /* on focus search  */
+.search input[type=text]:focus{
+    transition: width 0.5s ease-in-out;
+    border: 2px groove #2ce;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    color: #ffccff;
+}
+
+/* first navbar  */
+.navbar{
+    /* background-color: red; */
+    flex: 2;
+}
+.navbar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar ul li{
+    display: inline-flex;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    display: block;
+    color: rgb(223, 255, 255);
+    padding: 16px 20px;
+}
+
+
+.navbar ul li a:hover{
+    border-radius: 6px;
+    color: #86bee8;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px inset #ffccff;
+}
+
+/* second navbar  */
+.navbar1{
+    /* background-color: rgb(255, 246, 235); */
+    display: flex;
+}
+
+.navbar1 ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar1 ul li{
+    display: inline-flex;
+}
+
+.navbar1 ul li a{
+    text-decoration: none;
+    display: block;
+    color: rgb(223, 255, 255);
+    color: rgb(25, 77, 87);
+    padding: 16px 20px;
+}
+
+
+.navbar1 ul li a:hover{
+    /* border-radius: 6px; */
+    color: #ffccff;
+    background-color: rgba(13, 66, 121, 0.8);
+    /* border-bottom: 1px inset #ffccff; */
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(13, 66, 121, 0.8);
+    padding: 80px;
+}
+
+.headtext{
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
+
+.section_1{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_as_logo{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
