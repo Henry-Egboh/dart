@@ -38,6 +38,11 @@ h4{
     height: 40px;
 }
 
+/* font awesome icon  */
+.angle{
+    margin-right: 10px;
+}
+
 /* ======================================================
                         FIRST NAV WITH HEADER 
                                             ========================================================== */
@@ -325,6 +330,7 @@ input[type=text]::placeholder{
     text-align: center;
 }
 
+/* contents inside the sub_main divs */
 .sub_content{
     padding: 40px 20px 10px;
 }
@@ -346,26 +352,121 @@ input[type=text]::placeholder{
 
 .sub_content:nth-of-type(3){
     display: flex;
+    justify-content: space-between;
 }
 
+/* ==============================================================
+                                                FOOTER
+                                                    =================================================================== */
+
+/* main container for footer  */
 .footer{
     display: flex;
+    flex-direction: column;
     background-color: rgb(25, 77, 87);
 }
 
+/* the listing and the text section  */
+.footer_col_1{
+    display: flex;
+    gap: 6%;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* footer text on the left  */
+.footer_text{
+    display: flex;
+    flex-direction: column;
+    color: #ffccff; 
+    font-weight: 500;
+    row-gap: 20px;
+}
+
+.footer_text_1, .footer_text_2{
+    padding-left: 16px;
+}
+
+.footer_text h4{
+    color: #ffccff;
+    font-weight: 500;
+    font-size: 14px; 
+}
+
+.footer_text p{
+    color: #ffccff;
+    font-weight: 500;
+    font-size: 12px; 
+}
+
+/* vertical list items */
 .footer_list ul{
     list-style-type: none;
 }
 
 .footer_list ul li a{
-    color: #443321;
+    color: rgb(223, 255, 255);
     text-decoration: none;
     display: block;
     padding: 12px 14px;
+    font-size: 14px;
 }
 
+.footer_list ul li a:hover{
+    background-color: #020;
+    border-bottom: 1px solid whitesmoke;
+}
+
+/* horizontal list items */
+.footer_text .footer_list_hor{
+    margin-top: 20%;
+}
+
+.footer_list_hor ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.footer_list_hor ul li a{
+    text-decoration: none;
+    display: block;
+    color: rgb(237, 223, 196);
+    padding: 12px 16px 6px;
+    font-size: 14px;
+}
+
+.footer_list_hor ul li a:hover{
+    color: rgb(223, 255, 255);
+    border-bottom: 1px solid whitesmoke;
+}
+
+.footer_col_2{
+    display: flex;
+    border-top: 1px solid whitesmoke;
+    justify-content: space-between;
+}
+
+.footer_list_hor:nth-of-type(2) ul li a, .footer_list_hor:nth-of-type(1)  ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px 6px;
+    font-size: 10px;
+    color: whitesmoke;
+}
+
+/* second part of the footer witgh yellow background */
 .footer_1{
     display: flex;
     background-color: rgb(237, 223, 196);
+    font-size: 12px;
+    padding: 10px;
+    gap: 35%;
+    /* justify-content: center; */
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    padding-left: 40px;
 }
 
